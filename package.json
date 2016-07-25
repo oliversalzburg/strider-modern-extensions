@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Utilities to build modern extensions for Strider",
   "homepage": "https://github.com/oliversalzburg/strider-modern-extensions",
-  "main": "webapp.js",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint *.js config lib",
+    "lint": "eslint *.js lib",
     "test": "npm run lint && istanbul cover node_modules/mocha/bin/_mocha --recursive test"
   },
   "repository": {
@@ -23,15 +23,12 @@
   "author": "Oliver Salzburg <oliver.salzburg@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.4.1",
     "debug": "^2.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.1.1",
     "istanbul": "^0.4.4",
-    "mocha": "^2.4.5",
-    "sinon": "^1.17.3",
-    "sinon-chai": "^2.8.0"
+    "mocha": "^2.4.5"
   }
 }
